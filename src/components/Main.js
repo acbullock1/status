@@ -37,7 +37,7 @@ const dataSource = [{
     component: 'Door Panel UI',
     number: 'MGLN-6948',
     title: 'Panel-UI to send location services to Panel-app',
-    status: 'The UI team is making a dev build to test their fix for the socket integration. They are awaiting access to Jenkins before cutting an official production build.'
+    status: "The UI team is making a dev build to test their fix for the socket integration. They are awaiting access to Jenkins before cutting an official production build (won't be until tomorrow per Keiver)."
 }, {
   key: '3',
   component: 'Compass: OTT Amazon Firestick',
@@ -50,7 +50,7 @@ class Main extends React.Component {
       return (
         <div>
           
-            <Card title={<div>Status   <Icon type="line-chart"/></div>}  >
+            <Card title={<div>Ticket Status   <Icon type="line-chart"/></div>}  >
             
               <Table dataSource={dataSource} columns={columns} size="small" scroll={{ x: 480 }}/>
             </Card>
