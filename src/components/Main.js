@@ -33,7 +33,7 @@ const dataSource = [{
     component: 'Door Panel UI',
     number: 'MGLN-6948',
     title: 'Panel-UI to send location services to Panel-app',
-    status: 'We need another UI build - Jay is currently awaiting access to Jenkins'
+    status: 'The UI team is making a dev build to test their fix for the socket integration. They are awaiting access to Jenkins before cutting an official production build.'
 }];
 class Main extends React.Component {
     render() {
@@ -42,7 +42,8 @@ class Main extends React.Component {
             <Table dataSource={dataSource} columns={columns} />
             <Card title="Notes">
                 <ul>
-                    <li>Regression on Door Panel will begin when all tickets are closed.</li>
+                    <li>Regression on Door Panel will begin when all tickets are closed and a production build is loaded on the door panel.</li>
+                    <li><a target="_blank" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                 </ul>
             </Card>
         </div>
