@@ -38,6 +38,12 @@ const dataSource = [{
     number: 'MGLN-6948',
     title: 'Panel-UI to send location services to Panel-app',
     status: 'The UI team is making a dev build to test their fix for the socket integration. They are awaiting access to Jenkins before cutting an official production build.'
+}, {
+  key: '3',
+  component: 'Compass: OTT Amazon Firestick',
+  number: 'MGLN-5679',
+  title: 'OV:Fire TV - Create error message for Account Creation and User Login',
+  status:'Waiting to see if Ed actually needs help on this, if so, I will need get a knowledge transfer so I can properly test this component.'
 }];
 class Main extends React.Component {
     render() {
@@ -46,7 +52,7 @@ class Main extends React.Component {
             <Table dataSource={dataSource} columns={columns} size="small" scroll={{ x: 600 }}/>
             <Card title="Notes">
                 <ul>
-                    <li>Regression on Door Panel will begin when all tickets are closed and a production build is loaded on the door panel.</li>
+                    <li>Regression on <strong>Door Panel UI</strong> will begin when all tickets are closed and a production build is loaded on the door panel.</li>
                     <li><a target="_blank" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                 </ul>
             </Card>
