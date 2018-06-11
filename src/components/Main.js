@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Table, Card} from 'antd';
+import {Table,Icon, Card} from 'antd';
 
 const columns=[{
     width:150,
@@ -14,7 +14,7 @@ const columns=[{
   title: 'Number',
   dataIndex: 'number',
   key: 'number',
-  render: text => <a target= "_blank" href={"https://carnival.atlassian.net/browse/"+text}>{text}</a>
+  render: text => <a target= "_blank" rel="noopener noreferrer" href={"https://carnival.atlassian.net/browse/"+text}>{text}</a>
 }, {
   width:200,
   title: 'Title',
@@ -49,8 +49,14 @@ class Main extends React.Component {
     render() {
       return (
         <div>
-            <Table dataSource={dataSource} columns={columns} size="small" scroll={{ x: 600 }}/>
-            <Card title="Notes">
+          
+            <Card title={<div>Status   <Icon type="line-chart"/></div>}  >
+            
+              <Table dataSource={dataSource} columns={columns} size="small" scroll={{ x: 480 }}/>
+            </Card>
+            <br/>
+            <br/>
+            <Card title={<div>Notes <Icon type="edit"/></div>}>
                 <ul>
                     <li>Regression on <strong>Door Panel UI</strong> will begin when all tickets are closed and a production build is loaded on the door panel.</li>
                     <li><a target="_blank" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
