@@ -3,21 +3,25 @@ import React from 'react';
 import {Table, Card} from 'antd';
 
 const columns=[{
+    width:150,
     title: 'Component',
   dataIndex: 'component',
   key: 'component',
   defaultSortOrder: 'ascend',
   sorter: (a, b) => {return a.component.localeCompare(b.component)},
 }, {
+  width:100,
   title: 'Number',
   dataIndex: 'number',
   key: 'number',
   render: text => <a target= "_blank" href={"https://carnival.atlassian.net/browse/"+text}>{text}</a>
 }, {
+  width:200,
   title: 'Title',
   dataIndex: 'title',
   key: 'title',
 },{
+    width:200,
     title: 'Status',
     dataIndex: 'status',
     key: 'status'
@@ -39,7 +43,7 @@ class Main extends React.Component {
     render() {
       return (
         <div>
-            <Table dataSource={dataSource} columns={columns} />
+            <Table dataSource={dataSource} columns={columns} size="small" scroll={{ x: 600 }}/>
             <Card title="Notes">
                 <ul>
                     <li>Regression on Door Panel will begin when all tickets are closed and a production build is loaded on the door panel.</li>
