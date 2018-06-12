@@ -43,7 +43,7 @@ const dataSource = [{
   component: 'Compass: OTT Amazon Firestick',
   number: 'MGLN-5679',
   title: 'OV:Fire TV - Create error message for Account Creation and User Login',
-  status:'Waiting to see if Ed actually needs help on this, if so, I will need get a knowledge transfer so I can properly test this component.'
+  status:'Waiting to see if Ed actually needs help on this, if so, I will need to get a knowledge-transfer so I can properly test this component.'
 }];
 class Main extends React.Component {
     render() {
