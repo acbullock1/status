@@ -55,7 +55,7 @@ const dataSource = [
   status: 'Deployment of the ticket to DevInt is currently BLOCKED as no known Magellan team member has access to Jenkins to initiate a new build of user-video-api. straight forward test. Waiting for it to get transitioned to QA in progress'
 }];
 
-let now = new Date(2018, 5, 12, 15, 3);
+let now = new Date(2018, 5, 12, 15, 50);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -70,6 +70,7 @@ class Main extends React.Component {
             <br/>
             <Card title={<div>Notes <Icon type="edit"/></div>}>
                 <ul>
+                  <li>Since I am blocked on all tasks, I am going to help Nithish test <strong>LeftNav2</strong></li>
                   <li>The team is having issues accessing Jenkins. This, along with some environment issues are preventing new builds from being created, and preventing builds from being promoted to the next environment.</li>
                     <li>Regression on <strong>Door Panel UI</strong> will begin when all tickets are closed and a production build is loaded on the door panel.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
