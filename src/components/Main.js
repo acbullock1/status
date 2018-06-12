@@ -39,7 +39,7 @@ const dataSource = [
     component: 'Door Panel UI',
     number: 'MGLN-6948',
     title: 'Panel-UI to send location services to Panel-app',
-    status: "Keiver/Jay made a dev build. They have resolved the issue and the panel-app IS receiving the location events. However, due to Jenkins issues (see Notes section), an official build has not been generated as yet. I would prefer to validate agains the production build."
+    status: "Keiver/Jay made a dev build. They have resolved the issue and the panel-app IS receiving the location events. However, due to Jenkins issues (see Notes section), an official build has not been generated as yet. I would prefer to validate against the production build."
 }, {
   key: '2',
   component: 'Compass: OTT Amazon Firestick',
