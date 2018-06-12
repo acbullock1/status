@@ -46,9 +46,16 @@ const dataSource = [
   number: 'MGLN-5679',
   title: 'OV:Fire TV - Create error message for Account Creation and User Login',
   status:'Pending: Waiting to see if Ed actually needs help on this, if so, I will need to get a knowledge transfer so I can properly test this component.'
+},
+{
+  key:'3',
+  component: 'xiUserVideoAPI',
+  number: 'MGLN-7180',
+  title: '500 when trying to unfavorite a series in Ocean View in QA',
+  status: 'straight forward test. Waiting for it to get transitioned to QA in progress'
 }];
 
-let now = new Date(2018, 5, 12, 11, 54);
+let now = new Date(2018, 5, 12, 14, 52);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
