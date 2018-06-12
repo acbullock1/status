@@ -5,7 +5,7 @@ import {Table,Icon, Card} from 'antd';
 const columns=[{
     width:150,
     title: 'Component',
-  dataIndex: 'component',
+    dataIndex: 'component',
   key: 'component',
   defaultSortOrder: 'ascend',
   sorter: (a, b) => {return a.component.localeCompare(b.component)},
@@ -39,16 +39,16 @@ const dataSource = [
     component: 'Door Panel UI',
     number: 'MGLN-6948',
     title: 'Panel-UI to send location services to Panel-app',
-    status: "Keiver/Jay made a dev build. They have resolved the issue and the panel-app IS receiving the location events. However, due to Jenkins issues (see Notes section), an official build has not been generated as yet. I would prefer to validate against the production build."
+    status: "QA Blocked: Keiver/Jay made a dev build. They have resolved the issue and the panel-app IS receiving the location events. However, due to Jenkins issues (see Notes section), an official build has not been generated as yet. I would prefer to validate against the production build."
 }, {
   key: '2',
   component: 'Compass: OTT Amazon Firestick',
   number: 'MGLN-5679',
   title: 'OV:Fire TV - Create error message for Account Creation and User Login',
-  status:'Waiting to see if Ed actually needs help on this, if so, I will need to get a knowledge transfer so I can properly test this component.'
+  status:'Pending: Waiting to see if Ed actually needs help on this, if so, I will need to get a knowledge transfer so I can properly test this component.'
 }];
 
-let now = new Date(2018, 5, 12, 11, 20);
+let now = new Date(2018, 5, 12, 11, 54);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
