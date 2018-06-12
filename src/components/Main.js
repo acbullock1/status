@@ -52,10 +52,10 @@ const dataSource = [
   component: 'xiUserVideoAPI',
   number: 'MGLN-7180',
   title: '500 when trying to unfavorite a series in Ocean View in QA',
-  status: 'straight forward test. Waiting for it to get transitioned to QA in progress'
+  status: 'Deployment of the ticket to DevInt is currently BLOCKED as no known Magellan team member has access to Jenkins to initiate a new build of user-video-api. straight forward test. Waiting for it to get transitioned to QA in progress'
 }];
 
-let now = new Date(2018, 5, 12, 14, 52);
+let now = new Date(2018, 5, 12, 15, 3);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
