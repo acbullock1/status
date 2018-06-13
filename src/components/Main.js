@@ -75,7 +75,7 @@ const dataSource = [
   number: 'MGLN-7180',
   state: 'DEV COMPLETE',
   title: '500 when trying to unfavorite a series in Ocean View in QA',
-  status: 'Changes deployed to DevInt. However, this is current;y UNTESTABLE in DevInt due to lack of availability of test-proxy in devInt and lack of availability of xiCMS in DevInt to allow interaction of service through XOS.  Waiting for it to get transitioned to QA in progress'
+  status: 'Changes deployed to DevInt. However, this is currently UNTESTABLE in DevInt due to lack of availability of test-proxy in devInt and lack of availability of xiCMS in DevInt to allow interaction of service through XOS.  Waiting for it to get transitioned to QA in progress'
 },
 {
   key:'5',
