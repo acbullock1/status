@@ -21,41 +21,50 @@ const columns=[{
   dataIndex: 'title',
   key: 'title',
 },{
+  width:200,
+  title: 'State',
+  dataIndex: 'state',
+  key: 'state'
+},{
     width:200,
     title: 'Status',
     dataIndex: 'status',
     key: 'status'
 }];
 const dataSource = [
-  // {
-  //   key: '1',
-  //   component: 'xiCEP',
-  //   number: 'MGLN-6812',
-  //   title: 'Clickstream CEP Incident Alerting',
-  //   status: 'Waiting for this to be in QA environment before testing. (See Notes Section)'
-  // },
-   {
+  {
     key: '1',
+    component: 'xiCEP',
+    number: 'MGLN-6812',
+    state: 'DEV COMPLETE',
+    title: 'Clickstream CEP Incident Alerting',
+    status: 'Waiting for this to be in QA environment before testing. (See Notes Section)'
+  },
+   {
+    key: '2',
     component: 'Door Panel UI',
     number: 'MGLN-6948',
+    state: 'BLOCKED',
     title: 'Panel-UI to send location services to Panel-app',
     status: "QA Blocked: Keiver/Jay made a dev build. They have resolved the issue and the panel-app IS receiving the location events. However, due to Jenkins issues (see Notes section), an official build has not been generated as yet. I would prefer to validate against the production build."
 }, {
-  key: '2',
+  key: '3',
   component: 'Compass: OTT Amazon Firestick',
   number: 'MGLN-5679',
+  state: 'QA IN PROGRESS',
   title: 'OV:Fire TV - Create error message for Account Creation and User Login',
-  status:'Pending: Waiting to see if Ed actually needs help on this, if so, I will need to get a knowledge transfer so I can properly test this component.'
+  status:'Pending: Waiting to see if Ed actually needs help on this, if so, I will need to get a knowledge transfer so I can properly test this component. This ticket is currently assigned to Kenny Tang'
 },
 {
-  key:'3',
+  key:'4',
   component: 'xiUserVideoAPI',
   number: 'MGLN-7180',
+  state: 'DEV COMPLETE',
   title: '500 when trying to unfavorite a series in Ocean View in QA',
   status: 'Deployment of the ticket to DevInt is currently BLOCKED as no known Magellan team member has access to Jenkins to initiate a new build of user-video-api. straight forward test. Waiting for it to get transitioned to QA in progress'
 }];
 
-let now = new Date(2018, 5, 12, 15, 50);
+let now = new Date(2018, 5, 13, 11, 43);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -64,7 +73,7 @@ class Main extends React.Component {
             
             <Card title={<div>Ticket Status   <Icon type="line-chart"/> <br/><strong>Last Updated:</strong>  {lastupdated}</div>}  >
             
-              <Table dataSource={dataSource} columns={columns} size="small" scroll={{ x: 480 }}/>
+              <Table dataSource={dataSource} columns={columns} size="small" scroll={{ x: 800 }}/>
             </Card>
             <br/>
             <br/>
