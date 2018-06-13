@@ -101,12 +101,14 @@ class Main extends React.Component {
             <br/>
             <br/>
             <Card title={<div>Notes <Icon type="edit"/></div>}>
+              <Card>
                 <ul>
                   <li>Since I am blocked on all tasks, I am going to help Nithish test <strong>LeftNav2</strong></li>
                   <li>The team is having issues accessing Jenkins. This, along with some environment issues are preventing new builds from being created, and preventing builds from being promoted to the next environment.</li>
                     <li>Regression on <strong>Door Panel UI</strong> will begin when all tickets are closed and a production build is loaded on the door panel.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                 </ul>
+                </Card>
             </Card>
         </div>
       );
