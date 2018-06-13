@@ -24,7 +24,21 @@ const columns=[{
   width:200,
   title: 'State',
   dataIndex: 'state',
-  key: 'state'
+  key: 'state',
+  filters:[{
+    text:"DEV COMPLETE",
+    value:"DEV COMPLETE"
+  },{
+    text:"QA IN PROGRESS",
+    value: "QA IN PROGRESS"
+  },{
+    text: "BLOCKED",
+    value: "BLOCKED"
+  }],
+  filterMultiple: true,
+  onFilter: (value, record) => record.state.indexOf(value) === 0,
+  // defaultSortOrder: 'ascend',
+  // sorter: (a, b) => {return a.state.localeCompare(b.state)},
 },{
     width:200,
     title: 'Status',
@@ -61,7 +75,7 @@ const dataSource = [
   number: 'MGLN-7180',
   state: 'DEV COMPLETE',
   title: '500 when trying to unfavorite a series in Ocean View in QA',
-  status: 'Changes deployed to DevInt. However, this is current;y UNTESTABLE in DevInt due to lack of availability of test-proxy in devInt and lack of availability of xiCMS in DevInt to allow interaction of service through XOS. Waiting for it to get transitioned to QA in progress'
+  status: 'Changes deployed to DevInt. However, this is current;y UNTESTABLE in DevInt due to lack of availability of test-proxy in devInt and lack of availability of xiCMS in DevInt to allow interaction of service through XOS.  Waiting for it to get transitioned to QA in progress'
 },
 {
   key:'5',
