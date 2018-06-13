@@ -61,10 +61,19 @@ const dataSource = [
   number: 'MGLN-7180',
   state: 'DEV COMPLETE',
   title: '500 when trying to unfavorite a series in Ocean View in QA',
-  status: 'Deployment of the ticket to DevInt is currently BLOCKED as no known Magellan team member has access to Jenkins to initiate a new build of user-video-api. straight forward test. Waiting for it to get transitioned to QA in progress'
+  status: 'Changes deployed to DevInt. However, this is current;y UNTESTABLE in DevInt due to lack of availability of test-proxy in devInt and lack of availability of xiCMS in DevInt to allow interaction of service through XOS. Waiting for it to get transitioned to QA in progress'
+},
+{
+  key:'5',
+  component: 'XOS',
+  number:'MGLN-7168',
+  state: 'DEV COMPLETE',
+  title: "'XOS' /applicationschedule/{ContentId} call to support backward compatibility with the dmuOS for digital signage",
+  status: 'Straight-forward test; waiting for the ticket to move to QA IN PROGRESS'
+
 }];
 
-let now = new Date(2018, 5, 13, 11, 43);
+let now = new Date(2018, 5, 13, 14, 58);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
