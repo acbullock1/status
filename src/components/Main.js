@@ -61,16 +61,17 @@ const dataSource = [
     state: 'BLOCKED',
     title: 'Panel-UI to send location services to Panel-app',
     status: "QA Blocked: Keiver/Jay made a dev build. They have resolved the issue and the panel-app IS receiving the location events. However, due to Jenkins issues (see Notes section), an official build has not been generated as yet. I would prefer to validate against the production build."
-}, {
-  key: '3',
-  component: 'Compass: OTT Amazon Firestick',
-  number: 'MGLN-5679',
-  state: 'QA IN PROGRESS',
-  title: 'OV:Fire TV - Create error message for Account Creation and User Login',
-  status:'Pending: Waiting to see if Ed actually needs help on this, if so, I will need to get a knowledge transfer so I can properly test this component. This ticket is currently assigned to Kenny Tang'
-},
+}, 
+// {
+  // key: '3',
+  // component: 'Compass: OTT Amazon Firestick',
+  // number: 'MGLN-5679',
+  // state: 'QA IN PROGRESS',
+  // title: 'OV:Fire TV - Create error message for Account Creation and User Login',
+  // status:'Pending: Waiting to see if Ed actually needs help on this, if so, I will need to get a knowledge transfer so I can properly test this component. This ticket is currently assigned to Kenny Tang'
+// },
 {
-  key:'4',
+  key:'3',
   component: 'xiUserVideoAPI',
   number: 'MGLN-7180',
   state: 'DEV COMPLETE',
@@ -78,7 +79,7 @@ const dataSource = [
   status: 'Changes deployed to DevInt. However, this is currently UNTESTABLE in DevInt due to lack of availability of test-proxy in devInt and lack of availability of xiCMS in DevInt to allow interaction of service through XOS.  Waiting for it to get transitioned to QA in progress'
 },
 {
-  key:'5',
+  key:'4',
   component: 'XOS',
   number:'MGLN-7168',
   state: 'DEV COMPLETE',
@@ -87,7 +88,7 @@ const dataSource = [
 
 }];
 
-let now = new Date(2018, 5, 13, 14, 58);
+let now = new Date(2018, 5, 14, 11, 30);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
