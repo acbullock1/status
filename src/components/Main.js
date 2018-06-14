@@ -77,14 +77,6 @@ const dataSource = [
   state: 'DEV COMPLETE',
   title: '500 when trying to unfavorite a series in Ocean View in QA',
   status: 'Changes deployed to DevInt. However, this is currently UNTESTABLE in DevInt due to lack of availability of test-proxy in devInt and lack of availability of xiCMS in DevInt to allow interaction of service through XOS.  Waiting for it to get transitioned to QA in progress'
-},
-{
-  key:'5',
-  component: 'XOS',
-  number:'MGLN-7168',
-  state: 'QA IN PROGRESS',
-  title: "'XOS' /applicationschedule/{ContentId} call to support backward compatibility with the dmuOS for digital signage",
-  status: 'Currently testing..'
 }
 // {
 //   key:'6',
@@ -152,6 +144,7 @@ class Main extends React.Component {
             <Card title={<div>Notes <Icon type="edit"/></div>}>
               <Card>
                 <ul>
+                  <li>Looking at OTT tickets to see if they contain enough info to test.</li>
                   <li>Since I am blocked on all tasks, I am going to help Nithish test <strong>LeftNav2</strong></li>
                   <li>The team is having issues accessing Jenkins. This, along with some environment issues are preventing new builds from being created, and preventing builds from being promoted to the next environment.</li>
                     <li>Regression on <strong>Door Panel UI</strong> will begin when all tickets are closed and a production build is loaded on the door panel.</li>
