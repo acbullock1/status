@@ -46,21 +46,14 @@ const columns=[{
     key: 'status'
 }];
 const dataSource = [
-  {
-    key: '1',
-    component: 'xiCEP',
-    number: 'MGLN-6812',
-    state: 'QA IN PROGRESS',
-    title: 'Clickstream CEP Incident Alerting',
-    status: 'currently testing..'
-  },
+  
    {
-    key: '2',
+    key: '1',
     component: 'Door Panel UI',
     number: 'MGLN-6948',
-    state: 'BLOCKED',
+    state: 'QA IN PROGRESS',
     title: 'Panel-UI to send location services to Panel-app',
-    status: "QA Blocked: Keiver/Jay made a dev build. They have resolved the issue and the panel-app IS receiving the location events. However, due to Jenkins issues (see Notes section), an official build has not been generated as yet. I would prefer to validate against the production build."
+    status: "Jay cut a new build and it should be on C405 - will test in the morning"
 }, 
 // {
 //   key: '3',
@@ -128,7 +121,7 @@ const dataSource = [
 // }
 ];
 
-let now = new Date(2018, 5, 14, 16, 0);
+let now = new Date(2018, 5, 14, 18, 37);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
