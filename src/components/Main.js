@@ -50,9 +50,9 @@ const dataSource = [
     key: '1',
     component: 'xiCEP',
     number: 'MGLN-6812',
-    state: 'DEV COMPLETE',
+    state: 'QA IN PROGRESS',
     title: 'Clickstream CEP Incident Alerting',
-    status: 'Waiting for this to be in QA environment before testing. (See Notes Section)'
+    status: 'currently testing..'
   },
    {
     key: '2',
@@ -82,9 +82,9 @@ const dataSource = [
   key:'5',
   component: 'XOS',
   number:'MGLN-7168',
-  state: 'DEV COMPLETE',
+  state: 'QA IN PROGRESS',
   title: "'XOS' /applicationschedule/{ContentId} call to support backward compatibility with the dmuOS for digital signage",
-  status: 'Straight-forward test; waiting for the ticket to move to QA IN PROGRESS'
+  status: 'Currently testing..'
 }
 // {
 //   key:'6',
@@ -136,7 +136,7 @@ const dataSource = [
 // }
 ];
 
-let now = new Date(2018, 5, 14, 11, 30);
+let now = new Date(2018, 5, 14, 16, 0);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
