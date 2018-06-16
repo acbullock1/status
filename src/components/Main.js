@@ -102,22 +102,7 @@ const dataSource = [
     state: 'QA IN PROGRESS',
     status: 'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
   },
-  {
-    key: '10',
-    component:'OTT-RokuTV-1.1.0',
-    number:'MGLN-6161',
-    title:'OV:Roku - Clickstream - Video issue',
-    state: 'QA IN PROGRESS',
-    status:'Need a test scenario from Narendra. This ticket is similar to two other tickets, so I need clarification on the differences.'
-  },
-  {
-    key:'11',
-    component:'OTT-RokuTV-1.1.0',
-    number:'MGLN-6159',
-    title:'OV:Roku - Clickstream - Endpoint is not available',
-    state: 'QA IN PROGRESS',
-    status:'Need a test scenario from Narendra. This ticket is similar to two other tickets, so I need clarification on the differences.'
-  },
+  
   {
     key: '15',
     component: 'Door Panel UI',
@@ -156,7 +141,7 @@ const dataSource = [
 
 ];
 
-let now = new Date(2018, 5, 16, 18, 4);
+let now = new Date(2018, 5, 16, 18, 17);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
