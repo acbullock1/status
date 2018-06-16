@@ -46,82 +46,135 @@ const columns=[{
     key: 'status'
 }];
 const dataSource = [
-  
-   {
+  {
     key: '1',
+    component:'OTT-FireTV-1.1.0',
+    number:'MGLN-6219',
+    state:'QA IN PROGRESS',
+    title:'Update C# clickstream library to V2 specifications',
+    status:'This is a DEV ticket. Waiting for Maximo to include his proof to the ticket before closing this.'
+  },
+  {
+    key:'2',
+    component:'OTT-FireTV-1.1.0',
+    number: 'MGLN-6172',
+    state: 'QA IN PROGRESS',
+    title: 'OV:Fire TV - Clickstream - Service unavailable',
+    status: 'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+  },
+  {
+    key: '3',
+    component: 'OTT-FireTV-1.1.0',
+    number: 'MGLN-6170',
+    state: 'QA IN PROGRESS',
+    title:'OV:Fire TV - Clickstream - endpoint fails',
+    status:'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+  },
+  {
+    key:'4',
+    component:'OTT-FireTV-1.1.0',
+    number: 'MGLN-6169',
+    state: 'QA IN PROGRESS',
+    title: 'OV:Fire TV - Clickstream - User Auth Issue',
+    status:'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+  },
+  {
+    key:'5',
+    component:'OTT-FireTV-1.1.0',
+    number:'MGLN-6168',
+    state: 'QA IN PROGRESS',
+    title:'OV:Fire TV - ClickStream - Video issue',
+    status:'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+  },
+  {
+    key:'6',
+    component:'OTT-FireTV-1.1.0',
+    number:'MGLN-6166',
+    state: 'QA IN PROGRESS',
+    title: 'OV:Fire TV - Clickstream - Exiting collection/detail page',
+    status: 'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+  },
+  {
+    key:'7',
+    component: 'OTT-FireTV-1.1.0',
+    number:'MGLN-6165',
+    title: 'OV:Fire TV - ClickStream - Entering collection/detail page',
+    state: 'QA IN PROGRESS',
+    status: 'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+  },
+  {
+    key: '8',
+    component: 'OTT-RokuTV-1.1.0',
+    number:'MGLN-6164',
+    title:'OV:Roku - ClickStream - Entering collection/detail page',
+    state: 'QA IN PROGRESS',
+    status:''
+    
+  },
+  {
+    key: '9',
+    component:'OTT-RokuTV-1.1.0',
+    number:'MGLN-6163',
+    title:'OV:Roku - Clickstream - Exit Collection/Detail Page',
+    state: 'QA IN PROGRESS',
+    status:''
+    
+  },
+  {
+    key: '10',
+    component:'OTT-RokuTV-1.1.0',
+    number:'MGLN-6161',
+    title:'OV:Roku - Clickstream - Video issue',
+    state: 'QA IN PROGRESS',
+    status:'Need a test scenario from Narendra. This ticket is similar to two other tickets, so I need clarification on the differences.'
+  },
+  {
+    key:'11',
+    component:'OTT-RokuTV-1.1.0',
+    number:'MGLN-6159',
+    title:'OV:Roku - Clickstream - Endpoint is not available',
+    state: 'QA IN PROGRESS',
+    status:'Need a test scenario from Narendra. This ticket is similar to two other tickets, so I need clarification on the differences.'
+  },
+  {
+    key: '15',
     component: 'Door Panel UI',
     number: 'MGLN-6948',
     state: 'QA IN PROGRESS',
     title: 'Panel-UI to send location services to Panel-app',
-    status: "Jay cut a new build and it should be on C405 - will test in the morning"
-}, 
-// {
-//   key: '3',
-//   component: 'Compass: OTT Amazon Firestick',
-//   number: 'MGLN-5679',
-//   state: 'QA IN PROGRESS',
-//   title: 'OV:Fire TV - Create error message for Account Creation and User Login',
-//   status:'Pending: Waiting to see if Ed actually needs help on this, if so, I will need to get a knowledge transfer so I can properly test this component. This ticket is currently assigned to Kenny Tang'
-// },
-{
-  key:'4',
-  component: 'xiUserVideoAPI',
-  number: 'MGLN-7180',
-  state: 'DEV COMPLETE',
-  title: '500 when trying to unfavorite a series in Ocean View in QA',
-  status: 'Changes deployed to DevInt. However, this is currently UNTESTABLE in DevInt due to lack of availability of test-proxy in devInt and lack of availability of xiCMS in DevInt to allow interaction of service through XOS.  Waiting for it to get transitioned to QA in progress'
-}
-// {
-//   key:'6',
-//   component:'Compass: OTT Apple TV',
-//   number: 'MGLN-7072',
-//   state: 'QA IN PROGRESS',
-//   title: 'OV:Apple TV - No Recent/Favorite Service available',
-//   status: ''
-// },
-// {
-//   key:'7',
-//   component: 'Compass: OTT Apple TV',
-//   number: 'MGLN-6967',
-//   state: 'QA IN PROGRESS',
-//   title: "OV:Apple TV - Migrate user's favorite and recent",
-//   status:''
-// },
-// {
-//   key:'8',
-//   component: 'Compass: OTT Apple TV',
-//   number: 'MGLN-6966',
-//   state: 'QA IN PROGRESS',
-//   title: "OV:Apple TV - Recent and Favorites storing and fetching and UI",
-//   status:''
-// },
-// {
-//   key:'9',
-//   component: 'Compass: OTT Apple TV',
-//   number: 'MGLN-6965',
-//   state: 'QA IN PROGRESS',
-//   title: "OV:Apple TV - Empty recent and favorite UI - string update",
-//   status:''
-// },
-// {
-//   key:'10',
-//   component: 'Compass: OTT Apple TV',
-//   number: 'MGLN-6962',
-//   state: 'QA IN PROGRESS',
-//   title: "OV:Apple TV - Series Detail Page",
-//   status:''
-// },
-// {
-//   key:'11',
-//   component: 'OTT-RokuTV-1.2.0',
-//   number: 'MGLN-7070',
-//   state: 'DEV COMPLETE',
-//   title: "OV:Roku TV - No Recent/Favorite Service available",
-//   status:''
-// }
+    status: "Will test Monday. Nytec was doing testing on the panel. Need medallion to test."
+  },
+  {
+    key:'12',
+    component:'OTT-FireTV-1.1.0',
+    number:'MGLN-6533',
+    state:'DEV COMPLETE',
+    title:'OV:Fire TV - Clickstream update',
+    status:'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+  },
+  {
+    key:'13',
+    component:'OTT-RokuTV-1.1.0',
+    number:'MGLN-6532',
+    state:'DEV COMPLETE',
+    title:'OV:Roku TV - Clickstream update',
+    status:''
+  },
+  {
+    key:14,
+    component:'guest-journey',
+    number:'DM-3984',
+    state:'QA IN PROGRESS',
+    title:'Guest-Journey - returning incorrect Travel Companions (based on date)',
+    status:'need to retest.. low priority right now.'
+  }
+  
+  
+
+
 ];
 
-let now = new Date(2018, 5, 14, 18, 37);
+let now = new Date(2018, 5, 16, 17, 0);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -137,10 +190,8 @@ class Main extends React.Component {
             <Card title={<div>Notes <Icon type="edit"/></div>}>
               <Card>
                 <ul>
-                  <li>Looking at OTT tickets to see if they contain enough info to test.</li>
-                  <li>Since I am blocked on all tasks, I am going to help Nithish test <strong>LeftNav2</strong></li>
-                  <li>The team is having issues accessing Jenkins. This, along with some environment issues are preventing new builds from being created, and preventing builds from being promoted to the next environment.</li>
-                    <li>Regression on <strong>Door Panel UI</strong> will begin when all tickets are closed and a production build is loaded on the door panel.</li>
+                  <li>Currently not receiving ANY clickstream events on <strong>FireTV</strong>. Need to see if clickstream is diabled - or what else is going on.</li>
+                   <li>Regression on <strong>Door Panel UI</strong> will begin when all tickets are closed and a production build is loaded on the door panel.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?jql=filter%20in%20(xt_Magellan_Open_Sprints_In_QA_QA)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
                 </ul>
