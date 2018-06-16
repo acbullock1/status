@@ -168,6 +168,8 @@ class Main extends React.Component {
                   <li>MGLN-6162 - reopened, getting negative duration values for content_usage/content_view</li>
                   <li>MGLN-6164 - reopened, not getting content_view events for topnav</li>
                   <li>MGLN-6163 - reopened, not getting content_usage events for exiting episode detail page</li>
+                  <li>MGLN-6161 - reopened, need scenario in ticket</li>
+                  <li>MGLN-6159 - reopened, need scenario in ticket</li>
                 </ul>
                 </Card>
             </Card>
