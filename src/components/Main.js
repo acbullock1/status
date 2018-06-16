@@ -103,24 +103,6 @@ const dataSource = [
     status: 'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
   },
   {
-    key: '8',
-    component: 'OTT-RokuTV-1.1.0',
-    number:'MGLN-6164',
-    title:'OV:Roku - ClickStream - Entering collection/detail page',
-    state: 'QA IN PROGRESS',
-    status:''
-    
-  },
-  {
-    key: '9',
-    component:'OTT-RokuTV-1.1.0',
-    number:'MGLN-6163',
-    title:'OV:Roku - Clickstream - Exit Collection/Detail Page',
-    state: 'QA IN PROGRESS',
-    status:''
-    
-  },
-  {
     key: '10',
     component:'OTT-RokuTV-1.1.0',
     number:'MGLN-6161',
@@ -158,7 +140,7 @@ const dataSource = [
     number:'MGLN-6532',
     state:'DEV COMPLETE',
     title:'OV:Roku TV - Clickstream update',
-    status:''
+    status:'this ticket tracks that EVERY SINGLE EVENT has the correct schema. will need a full list of scenarios (which would ultimately be the regression suite for clickstream-ott'
   },
   {
     key:14,
@@ -174,7 +156,7 @@ const dataSource = [
 
 ];
 
-let now = new Date(2018, 5, 16, 17, 0);
+let now = new Date(2018, 5, 16, 18, 4);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -194,6 +176,13 @@ class Main extends React.Component {
                    <li>Regression on <strong>Door Panel UI</strong> will begin when all tickets are closed and a production build is loaded on the door panel.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?jql=filter%20in%20(xt_Magellan_Open_Sprints_In_QA_QA)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
+                </ul>
+                <h3>Reopened tix from 6/16</h3>
+                <ul>
+                  <li>MGLN-6156 - reopened , userid not populated, errdesc not coming from api, page may be wrong (not sure)</li>
+                  <li>MGLN-6162 - reopened, getting negative duration values for content_usage/content_view</li>
+                  <li>MGLN-6164 - reopened, not getting content_view events for topnav</li>
+                  <li>MGLN-6163 - reopened, not getting content_usage events for exiting episode detail page</li>
                 </ul>
                 </Card>
             </Card>
