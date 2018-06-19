@@ -52,7 +52,7 @@ const dataSource = [
     number:'MGLN-6219',
     state:'QA IN PROGRESS',
     title:'Update C# clickstream library to V2 specifications',
-    status:'This is a DEV ticket. Waiting for Maximo to include his proof to the ticket before closing this.'
+    status:'ETA: today. This is a DEV ticket. Waiting for Maximo to include his proof to the ticket before closing this.'
   },
   {
     key:'2',
@@ -138,15 +138,16 @@ class Main extends React.Component {
                 </ul>
                 <h3>Reopened tix</h3>
                 <ul>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6165">MGLN-6165</a> - reopened, not getting appropriate events when landing on episode detail page.</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6169">MGLN-6169</a> - reopened, not getting event when user authentication fails</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6168">MGLN-6168</a> - reopened, Max will cut a build that simulates video error. then i can test</li>
                   <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6156">MGLN-6156</a> - reopened , userid not populated, errdesc not coming from api, page may be wrong (not sure)</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6162">MGLN-6162</a> - reopened, getting negative duration values for content_usage/content_view</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6164">MGLN-6164</a> - reopened, not getting content_view events for topnav</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6163">MGLN-6163</a> - reopened, not getting content_usage events for exiting episode detail page</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6161">MGLN-6161</a> - reopened, need scenario in ticket</li>
                   <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6159">MGLN-6159</a> - reopened, need scenario in ticket</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6161">MGLN-6161</a> - reopened, need scenario in ticket</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6162">MGLN-6162</a> - reopened, getting negative duration values for content_usage/content_view</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6163">MGLN-6163</a> - reopened, not getting content_usage events for exiting episode detail page</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6164">MGLN-6164</a> - reopened, not getting content_view events for topnav</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6165">MGLN-6165</a> - reopened, not getting appropriate events when landing on episode detail page.</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6168">MGLN-6168</a> - reopened, Max will cut a build that simulates video error. then i can test</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6169">MGLN-6169</a> - reopened, not getting event when user authentication fails</li>
+                  
                 </ul>
                 </Card>
             </Card>
