@@ -60,7 +60,7 @@ const dataSource = [
     number: 'MGLN-6172',
     state: 'QA IN PROGRESS',
     title: 'OV:Fire TV - Clickstream - Service unavailable',
-    status: 'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+    status: 'Max will cut a build that simulates service error. then i can test'
   },
   {
     key: '3',
@@ -68,23 +68,7 @@ const dataSource = [
     number: 'MGLN-6170',
     state: 'QA IN PROGRESS',
     title:'OV:Fire TV - Clickstream - endpoint fails',
-    status:'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
-  },
-  {
-    key:'4',
-    component:'OTT-FireTV-1.1.0',
-    number: 'MGLN-6169',
-    state: 'QA IN PROGRESS',
-    title: 'OV:Fire TV - Clickstream - User Auth Issue',
-    status:'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
-  },
-  {
-    key:'5',
-    component:'OTT-FireTV-1.1.0',
-    number:'MGLN-6168',
-    state: 'QA IN PROGRESS',
-    title:'OV:Fire TV - ClickStream - Video issue',
-    status:'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+    status:'Max will cut a build that simulates endpoint error. then i can test'
   },
   {
     key:'6',
@@ -92,24 +76,15 @@ const dataSource = [
     number:'MGLN-6166',
     state: 'QA IN PROGRESS',
     title: 'OV:Fire TV - Clickstream - Exiting collection/detail page',
-    status: 'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+    status: 'Max and Will in discussion to see what exactly is expected. there seems to be some confusion/conflicts in the docs/ticket description'
   },
-  {
-    key:'7',
-    component: 'OTT-FireTV-1.1.0',
-    number:'MGLN-6165',
-    title: 'OV:Fire TV - ClickStream - Entering collection/detail page',
-    state: 'QA IN PROGRESS',
-    status: 'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
-  },
-  
   {
     key: '15',
     component: 'Door Panel UI',
     number: 'MGLN-6948',
-    state: 'QA IN PROGRESS',
+    state: 'BLOCKED',
     title: 'Panel-UI to send location services to Panel-app',
-    status: "Will test Monday. Nytec was doing testing on the panel. Need medallion to test."
+    status: "Need panel-app logs from Nytec."
   },
   {
     key:'12',
@@ -117,7 +92,7 @@ const dataSource = [
     number:'MGLN-6533',
     state:'DEV COMPLETE',
     title:'OV:Fire TV - Clickstream update',
-    status:'Currently not receiving ANY clickstream events on FireTV. Need to see if clickstream is diabled - or what else is going on.'
+    status:'this ticket tracks that EVERY SINGLE EVENT has the correct schema. will need a full list of scenarios (which would ultimately be the regression suite for clickstream-ott'
   },
   {
     key:'13',
@@ -141,7 +116,7 @@ const dataSource = [
 
 ];
 
-let now = new Date(2018, 5, 16, 18, 17);
+let now = new Date(2018, 5, 19, 11, 14);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -157,19 +132,21 @@ class Main extends React.Component {
             <Card title={<div>Notes <Icon type="edit"/></div>}>
               <Card>
                 <ul>
-                  <li>Currently not receiving ANY clickstream events on <strong>FireTV</strong>. Need to see if clickstream is diabled - or what else is going on.</li>
                    <li>Regression on <strong>Door Panel UI</strong> will begin when all tickets are closed and a production build is loaded on the door panel.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?jql=filter%20in%20(xt_Magellan_Open_Sprints_In_QA_QA)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
                 </ul>
-                <h3>Reopened tix from 6/16</h3>
+                <h3>Reopened tix</h3>
                 <ul>
-                  <li>MGLN-6156 - reopened , userid not populated, errdesc not coming from api, page may be wrong (not sure)</li>
-                  <li>MGLN-6162 - reopened, getting negative duration values for content_usage/content_view</li>
-                  <li>MGLN-6164 - reopened, not getting content_view events for topnav</li>
-                  <li>MGLN-6163 - reopened, not getting content_usage events for exiting episode detail page</li>
-                  <li>MGLN-6161 - reopened, need scenario in ticket</li>
-                  <li>MGLN-6159 - reopened, need scenario in ticket</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6165">MGLN-6165</a> - reopened, not getting appropriate events when landing on episode detail page.</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6169">MGLN-6169</a> - reopened, not getting event when user authentication fails</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6168">MGLN-6168</a> - reopened, Max will cut a build that simulates video error. then i can test</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6156">MGLN-6156</a> - reopened , userid not populated, errdesc not coming from api, page may be wrong (not sure)</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6162">MGLN-6162</a> - reopened, getting negative duration values for content_usage/content_view</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6164">MGLN-6164</a> - reopened, not getting content_view events for topnav</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6163">MGLN-6163</a> - reopened, not getting content_usage events for exiting episode detail page</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6161">MGLN-6161</a> - reopened, need scenario in ticket</li>
+                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6159">MGLN-6159</a> - reopened, need scenario in ticket</li>
                 </ul>
                 </Card>
             </Card>
