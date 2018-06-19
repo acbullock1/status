@@ -116,7 +116,7 @@ const dataSource = [
 
 ];
 
-let now = new Date(2018, 5, 19, 11, 14);
+let now = new Date(2018, 5, 19, 12, 0);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
