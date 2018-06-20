@@ -55,14 +55,6 @@ const dataSource = [
     status:'ETA: today. This is a DEV ticket. Waiting for Maximo to include his proof to the ticket before closing this.'
   },
   {
-    key:'2',
-    component:'OTT-FireTV-1.1.0',
-    number: 'MGLN-6172',
-    state: 'QA IN PROGRESS',
-    title: 'OV:Fire TV - Clickstream - Service unavailable',
-    status: 'Max will cut a build that simulates service error. then i can test'
-  },
-  {
     key: '3',
     component: 'OTT-FireTV-1.1.0',
     number: 'MGLN-6170',
@@ -116,7 +108,7 @@ const dataSource = [
 
 ];
 
-let now = new Date(2018, 5, 19, 12, 0);
+let now = new Date(2018, 5, 20, 13, 26);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -132,7 +124,8 @@ class Main extends React.Component {
             <Card title={<div>Notes <Icon type="edit"/></div>}>
               <Card>
                 <ul>
-                   <li>Regression on <strong>Door Panel UI</strong> will begin when all tickets are closed and a production build is loaded on the door panel.</li>
+                    <li>Building a matrix comparing/contrasting the clickstream behavior amongst the clients</li>
+                    <li>Waiting for new <strong>firetv</strong> build.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?jql=filter%20in%20(xt_Magellan_Open_Sprints_In_QA_QA)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
                 </ul>
@@ -145,7 +138,6 @@ class Main extends React.Component {
                   <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6163">MGLN-6163</a> - reopened, not getting content_usage events for exiting episode detail page</li>
                   <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6164">MGLN-6164</a> - reopened, not getting content_view events for topnav</li>
                   <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6165">MGLN-6165</a> - reopened, not getting appropriate events when landing on episode detail page.</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6168">MGLN-6168</a> - reopened, Max will cut a build that simulates video error. then i can test</li>
                   <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6169">MGLN-6169</a> - reopened, not getting event when user authentication fails</li>
                   
                 </ul>
