@@ -95,20 +95,42 @@ const dataSource = [
     status:'this ticket tracks that EVERY SINGLE EVENT has the correct schema. will need a full list of scenarios (which would ultimately be the regression suite for clickstream-ott'
   },
   {
-    key:14,
+    key:'14',
     component:'guest-journey',
     number:'DM-3984',
     state:'QA IN PROGRESS',
     title:'Guest-Journey - returning incorrect Travel Companions (based on date)',
     status:'need to retest.. low priority right now.'
+  },
+  {
+    key:'15',
+    component:'Compass: OTT Roku',
+    number:'MGLN-6156',
+    state:'BLOCKED',
+    title:'OV:Roku - Clickstream - API Error',
+    status:'blocked against xos bug: MGLN-7283'
   }
-  
+  ,{
+    key:'16',
+    component:'Compass: OTT Roku',
+    number:'MGLN-6159',
+    state:'BLOCKED',
+    title:'OV:Roku - Clickstream - Endpoint is not available',
+    status:'blocked against xos bug: MGLN-7283'
+  },{
+    key:'17',
+    component:'Compass: OTT Roku',
+    number:'MGLN-6161',
+    state:'BLOCKED',
+    title:'OV:Roku - Clickstream - Video issue',
+    status:'blocked against xos bug: MGLN-7283'
+  }
   
 
 
 ];
 
-let now = new Date(2018, 5, 20, 13, 26);
+let now = new Date(2018, 5, 20, 17, 34);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -131,14 +153,6 @@ class Main extends React.Component {
                 </ul>
                 <h3>Reopened tix</h3>
                 <ul>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6156">MGLN-6156</a> - reopened , userid not populated, errdesc not coming from api, page may be wrong (not sure)</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6159">MGLN-6159</a> - reopened, need scenario in ticket</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6161">MGLN-6161</a> - reopened, need scenario in ticket</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6162">MGLN-6162</a> - reopened, getting negative duration values for content_usage/content_view</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6163">MGLN-6163</a> - reopened, not getting content_usage events for exiting episode detail page</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6164">MGLN-6164</a> - reopened, not getting content_view events for topnav</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6165">MGLN-6165</a> - reopened, not getting appropriate events when landing on episode detail page.</li>
-                  <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-6169">MGLN-6169</a> - reopened, not getting event when user authentication fails</li>
                   
                 </ul>
                 </Card>
