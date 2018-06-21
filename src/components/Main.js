@@ -46,40 +46,18 @@ const columns=[{
     key: 'status'
 }];
 const dataSource = [
+  
   {
-    key: '1',
-    component:'OTT-FireTV-1.1.0',
-    number:'MGLN-6219',
-    state:'QA IN PROGRESS',
-    title:'Update C# clickstream library to V2 specifications',
-    status:'ETA: today. This is a DEV ticket. Waiting for Maximo to include his proof to the ticket before closing this.'
-  },
-  {
-    key: '3',
-    component: 'OTT-FireTV-1.1.0',
-    number: 'MGLN-6170',
-    state: 'QA IN PROGRESS',
-    title:'OV:Fire TV - Clickstream - endpoint fails',
-    status:'Max will cut a build that simulates endpoint error. then i can test'
-  },
-  {
-    key:'6',
+    key:'1',
     component:'OTT-FireTV-1.1.0',
     number:'MGLN-6166',
     state: 'QA IN PROGRESS',
     title: 'OV:Fire TV - Clickstream - Exiting collection/detail page',
-    status: 'Max and Will in discussion to see what exactly is expected. there seems to be some confusion/conflicts in the docs/ticket description'
+    status: 'Need new build from Max'
   },
+  
   {
-    key: '15',
-    component: 'Door Panel UI',
-    number: 'MGLN-6948',
-    state: 'BLOCKED',
-    title: 'Panel-UI to send location services to Panel-app',
-    status: "Need panel-app logs from Nytec."
-  },
-  {
-    key:'12',
+    key:'2',
     component:'OTT-FireTV-1.1.0',
     number:'MGLN-6533',
     state:'DEV COMPLETE',
@@ -87,7 +65,7 @@ const dataSource = [
     status:'this ticket tracks that EVERY SINGLE EVENT has the correct schema. will need a full list of scenarios (which would ultimately be the regression suite for clickstream-ott'
   },
   {
-    key:'13',
+    key:'3',
     component:'OTT-RokuTV-1.1.0',
     number:'MGLN-6532',
     state:'DEV COMPLETE',
@@ -95,15 +73,7 @@ const dataSource = [
     status:'this ticket tracks that EVERY SINGLE EVENT has the correct schema. will need a full list of scenarios (which would ultimately be the regression suite for clickstream-ott'
   },
   {
-    key:'14',
-    component:'guest-journey',
-    number:'DM-3984',
-    state:'QA IN PROGRESS',
-    title:'Guest-Journey - returning incorrect Travel Companions (based on date)',
-    status:'need to retest.. low priority right now.'
-  },
-  {
-    key:'15',
+    key:'4',
     component:'Compass: OTT Roku',
     number:'MGLN-6156',
     state:'BLOCKED',
@@ -111,26 +81,34 @@ const dataSource = [
     status:'blocked against xos bug: MGLN-7283'
   }
   ,{
-    key:'16',
+    key:'5',
     component:'Compass: OTT Roku',
     number:'MGLN-6159',
     state:'BLOCKED',
     title:'OV:Roku - Clickstream - Endpoint is not available',
     status:'blocked against xos bug: MGLN-7283'
   },{
-    key:'17',
+    key:'6',
     component:'Compass: OTT Roku',
     number:'MGLN-6161',
     state:'BLOCKED',
     title:'OV:Roku - Clickstream - Video issue',
     status:'blocked against xos bug: MGLN-7283'
+  },
+  {
+    key:'7',
+    component:'OTT-FireTV-1.1.0',
+    number: 'MGLN-6165',
+    state:'QA IN PROGRESS',
+    title: 'OV:Fire TV - ClickStream - Entering collection/detail page',
+    status: 'need a new build from Max..'
   }
   
 
 
 ];
 
-let now = new Date(2018, 5, 20, 17, 34);
+let now = new Date(2018, 5, 21, 12, 10);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -146,8 +124,8 @@ class Main extends React.Component {
             <Card title={<div>Notes <Icon type="edit"/></div>}>
               <Card>
                 <ul>
-                    <li>Building a matrix comparing/contrasting the clickstream behavior amongst the clients</li>
-                    <li>Waiting for new <strong>firetv</strong> build.</li>
+                    <li><strong>Ticket blocking 3 tickets: </strong><a href='https://carnival.atlassian.net/browse/MGLN-7283' rel="noopener noreferrer" target='_blank'>MGLN-7283</a></li>
+                    <li>Waiting for new build from Max to close remaining <strong>FireTV</strong> tickets.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?jql=filter%20in%20(xt_Magellan_Open_Sprints_In_QA_QA)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
                 </ul>
