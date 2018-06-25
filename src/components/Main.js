@@ -57,14 +57,6 @@ const columns=[
 ];
 const dataSource = [
   {
-    key:'1',
-    component: 'xiOrchistrate',
-    number: 'MGLN-7167',
-    state:'QA IN PROGRESS',
-    title:'[XOS] Add Travel Companions Needs to Clear New Security Requirements By xiLodging',
-    status:'starting today..'
-  },
-  {
     key:'2',
     component:'OTT-FireTV-1.1.0',
     number:'MGLN-6533',
@@ -84,7 +76,7 @@ const dataSource = [
     key:'4',
     component:'Compass: OTT Roku',
     number:'MGLN-6156',
-    state:'BLOCKED',
+    state:'QA IN PROGRESS',
     title:'OV:Roku - Clickstream - API Error',
     status:'Blocking ticket MGLN-7283 is in devint, waiting for Roku to be deployed to devint before being able to test.'
   },
@@ -92,7 +84,7 @@ const dataSource = [
     key:'5',
     component:'Compass: OTT Roku',
     number:'MGLN-6159',
-    state:'BLOCKED',
+    state:'READY',
     title:'OV:Roku - Clickstream - Endpoint is not available',
     status:'Blocking ticket MGLN-7283 is in devint, waiting for Roku to be deployed to devint before being able to test.'
   },
@@ -100,17 +92,9 @@ const dataSource = [
     key:'6',
     component:'Compass: OTT Roku',
     number:'MGLN-6161',
-    state:'BLOCKED',
+    state:'READY',
     title:'OV:Roku - Clickstream - Video issue',
     status:'Blocking ticket MGLN-7283 is in devint, waiting for Roku to be deployed to devint before being able to test.'
-  },
-  {
-    key:'7',
-    component:'xiOrchistrate',
-    number:'MGLN-7158',
-    state:'QA IN PROGRESS',
-    title:'Add XOS support to to delete travel companions for Ocean View profile',
-    status: 'starting today..'
   },
   {
     key:'8',
@@ -122,7 +106,7 @@ const dataSource = [
   }
 ];
 
-let now = new Date(2018, 5, 25, 10, 52);
+let now = new Date(2018, 5, 25, 15, 53);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -138,10 +122,10 @@ class Main extends React.Component {
             <Card title={<div>Notes <Icon type="edit"/></div>}>
               <Card>
                 <ul>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/329351879/ClickStream+supplemental+info">Clickstream update page</a></li>
                     <li><h2>Currently splitting up the "clickstream supplemental info" page into smaller, more manageable tickets.</h2></li>
                     <li>need to add comment to spec stating that we get content VIEW, not content USAGE, upon exiting episode detail</li>
                     <li> need to add comment to spec that we wont be throwing a content view event for entering a collection (its already thrown when you land on the topnav item)</li>
-                    <li><strong>Ticket blocking 3 tickets: </strong><a href='https://carnival.atlassian.net/browse/MGLN-7283' rel="noopener noreferrer" target='_blank'>MGLN-7283</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?jql=filter%20in%20(xt_Magellan_Open_Sprints_In_QA_QA)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
                 </ul>
