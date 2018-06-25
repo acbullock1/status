@@ -103,10 +103,18 @@ const dataSource = [
     state:'QA IN PROGRESS',
     title:"OV:Apple TV - Migrate user's favorite and recent",
     status:'sounds like i need to work directly with a dev to simulate the scenario that tests this ticket.'
+  },
+  {
+    key:'9',
+    component:'xiOrchistrate',
+    number:'MGLN-3257',
+    state:'QA IN PROGRESS',
+    title:"This ticket is reopened to address the Ocean View requirements for the future journey State Room Access",
+    status:'starting this tomorrow'
   }
 ];
 
-let now = new Date(2018, 5, 25, 15, 53);
+let now = new Date(2018, 5, 25, 16, 1);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
