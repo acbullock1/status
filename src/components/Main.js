@@ -2,60 +2,68 @@
 import React from 'react';
 import {Table,Icon, Card} from 'antd';
 
-const columns=[{
+const columns=[
+  {
     width:150,
     title: 'Component',
     dataIndex: 'component',
-  key: 'component',
-  defaultSortOrder: 'ascend',
-  sorter: (a, b) => {return a.component.localeCompare(b.component)},
-}, {
-  width:100,
-  title: 'Number',
-  dataIndex: 'number',
-  key: 'number',
-  render: text => <a target= "_blank" rel="noopener noreferrer" href={"https://carnival.atlassian.net/browse/"+text}>{text}</a>
-}, {
-  width:200,
-  title: 'Title',
-  dataIndex: 'title',
-  key: 'title',
-},{
-  width:200,
-  title: 'State',
-  dataIndex: 'state',
-  key: 'state',
-  filters:[{
-    text:"DEV COMPLETE",
-    value:"DEV COMPLETE"
-  },{
-    text:"QA IN PROGRESS",
-    value: "QA IN PROGRESS"
-  },{
-    text: "BLOCKED",
-    value: "BLOCKED"
-  }],
-  filterMultiple: true,
-  onFilter: (value, record) => record.state.indexOf(value) === 0,
-  // defaultSortOrder: 'ascend',
-  // sorter: (a, b) => {return a.state.localeCompare(b.state)},
-},{
+    key: 'component',
+    defaultSortOrder: 'ascend',
+    sorter: (a, b) => {return a.component.localeCompare(b.component)},
+  },
+  {
+    width:100,
+    title: 'Number',
+    dataIndex: 'number',
+    key: 'number',
+    defaultSortOrder: 'ascend',
+    sorter: (a, b) => {return a.component.localeCompare(b.component)},
+    render: text => <a target= "_blank" rel="noopener noreferrer" href={"https://carnival.atlassian.net/browse/"+text}>{text}</a>
+  },
+  {
+    width:200,
+    title: 'Title',
+    dataIndex: 'title',
+    key: 'title',
+  },
+  {
+    width:200,
+    title: 'State',
+    dataIndex: 'state',
+    key: 'state',
+    filters:[{
+      text:"DEV COMPLETE",
+      value:"DEV COMPLETE"
+    },
+    {
+      text:"QA IN PROGRESS",
+      value: "QA IN PROGRESS"
+    },
+    {
+      text: "BLOCKED",
+      value: "BLOCKED"
+    }],
+    filterMultiple: true,
+    onFilter: (value, record) => record.state.indexOf(value) === 0,
+    // defaultSortOrder: 'ascend',
+    // sorter: (a, b) => {return a.state.localeCompare(b.state)},
+  },
+  {
     width:200,
     title: 'Status',
     dataIndex: 'status',
     key: 'status'
-}];
+  }
+];
 const dataSource = [
-  
   {
     key:'1',
-    component:'OTT-FireTV-1.1.0',
-    number:'MGLN-6166',
-    state: 'QA IN PROGRESS',
-    title: 'OV:Fire TV - Clickstream - Exiting collection/detail page',
-    status: 'Need new build from Max'
+    component: 'xiOrchistrate',
+    number: 'MGLN-7167',
+    state:'QA IN PROGRESS',
+    title:'[XOS] Add Travel Companions Needs to Clear New Security Requirements By xiLodging',
+    status:'starting today..'
   },
-  
   {
     key:'2',
     component:'OTT-FireTV-1.1.0',
@@ -78,37 +86,43 @@ const dataSource = [
     number:'MGLN-6156',
     state:'BLOCKED',
     title:'OV:Roku - Clickstream - API Error',
-    status:'blocked against xos bug: MGLN-7283'
-  }
-  ,{
+    status:'Blocking ticket MGLN-7283 is in devint, waiting for Roku to be deployed to devint before being able to test.'
+  },
+  {
     key:'5',
     component:'Compass: OTT Roku',
     number:'MGLN-6159',
     state:'BLOCKED',
     title:'OV:Roku - Clickstream - Endpoint is not available',
-    status:'blocked against xos bug: MGLN-7283'
-  },{
+    status:'Blocking ticket MGLN-7283 is in devint, waiting for Roku to be deployed to devint before being able to test.'
+  },
+  {
     key:'6',
     component:'Compass: OTT Roku',
     number:'MGLN-6161',
     state:'BLOCKED',
     title:'OV:Roku - Clickstream - Video issue',
-    status:'blocked against xos bug: MGLN-7283'
+    status:'Blocking ticket MGLN-7283 is in devint, waiting for Roku to be deployed to devint before being able to test.'
   },
   {
     key:'7',
-    component:'OTT-FireTV-1.1.0',
-    number: 'MGLN-6165',
+    component:'xiOrchistrate',
+    number:'MGLN-7158',
     state:'QA IN PROGRESS',
-    title: 'OV:Fire TV - ClickStream - Entering collection/detail page',
-    status: 'need a new build from Max..'
+    title:'Add XOS support to to delete travel companions for Ocean View profile',
+    status: 'starting today..'
+  },
+  {
+    key:'8',
+    component:'OTT-AppleTV-1.2.0',
+    number:'MGLN-6967',
+    state:'QA IN PROGRESS',
+    title:"OV:Apple TV - Migrate user's favorite and recent",
+    status:'sounds like i need to work directly with a dev to simulate the scenario that tests this ticket.'
   }
-  
-
-
 ];
 
-let now = new Date(2018, 5, 21, 12, 10);
+let now = new Date(2018, 5, 25, 10, 52);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -124,16 +138,15 @@ class Main extends React.Component {
             <Card title={<div>Notes <Icon type="edit"/></div>}>
               <Card>
                 <ul>
+                    <li><h2>Currently splitting up the "clickstream supplemental info" page into smaller, more manageable tickets.</h2></li>
+                    <li>need to add comment to spec stating that we get content VIEW, not content USAGE, upon exiting episode detail</li>
+                    <li> need to add comment to spec that we wont be throwing a content view event for entering a collection (its already thrown when you land on the topnav item)</li>
                     <li><strong>Ticket blocking 3 tickets: </strong><a href='https://carnival.atlassian.net/browse/MGLN-7283' rel="noopener noreferrer" target='_blank'>MGLN-7283</a></li>
-                    <li>Waiting for new build from Max to close remaining <strong>FireTV</strong> tickets.</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?jql=filter%20in%20(xt_Magellan_Open_Sprints_In_QA_QA)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
                 </ul>
-                <h3>Reopened tix</h3>
-                <ul>
-                  
-                </ul>
-                </Card>
+                
+              </Card>
             </Card>
         </div>
       );
