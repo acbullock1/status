@@ -78,7 +78,7 @@ const dataSource = [
     number:'MGLN-6156',
     state:'QA IN PROGRESS',
     title:'OV:Roku - Clickstream - API Error',
-    status:'Blocking ticket MGLN-7283 is in devint, waiting for Roku to be deployed to devint before being able to test.'
+    status:'Need to simulate scenario with Narendra'
   },
   {
     key:'5',
@@ -86,7 +86,7 @@ const dataSource = [
     number:'MGLN-6159',
     state:'READY',
     title:'OV:Roku - Clickstream - Endpoint is not available',
-    status:'Blocking ticket MGLN-7283 is in devint, waiting for Roku to be deployed to devint before being able to test.'
+    status:'Need to simulate scenario with Narendra'
   },
   {
     key:'6',
@@ -94,7 +94,7 @@ const dataSource = [
     number:'MGLN-6161',
     state:'READY',
     title:'OV:Roku - Clickstream - Video issue',
-    status:'Blocking ticket MGLN-7283 is in devint, waiting for Roku to be deployed to devint before being able to test.'
+    status:'Need to simulate scenario with Narendra'
   },
   {
     key:'8',
