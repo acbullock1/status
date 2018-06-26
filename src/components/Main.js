@@ -114,7 +114,7 @@ const dataSource = [
   }
 ];
 
-let now = new Date(2018, 5, 25, 16, 1);
+let now = new Date(2018, 5, 26, 12, 34);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -131,6 +131,7 @@ class Main extends React.Component {
               <Card>
                 <ul>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/329351879/ClickStream+supplemental+info">Clickstream update page</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/241926493/Fire+TV+Roku+TV+Apple+TV+Stateroom+iOS+and+Android+Clickstream+Events">OTT clickstream specs</a></li>
                     <li><h2>Currently splitting up the "clickstream supplemental info" page into smaller, more manageable tickets.</h2></li>
                     <li>need to add comment to spec stating that we get content VIEW, not content USAGE, upon exiting episode detail</li>
                     <li> need to add comment to spec that we wont be throwing a content view event for entering a collection (its already thrown when you land on the topnav item)</li>
@@ -138,6 +139,14 @@ class Main extends React.Component {
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?jql=filter%20in%20(xt_Magellan_Open_Sprints_In_QA_QA)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
                 </ul>
                 
+              </Card>
+              <br/>
+              <Card title="Priorities">
+                <ol>
+                  <li>Xos</li>
+                  <li>Roku</li>
+                  <li>Splitting up the 'clickstream update' page</li>
+                </ol>
               </Card>
             </Card>
         </div>
