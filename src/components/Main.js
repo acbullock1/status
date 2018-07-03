@@ -42,6 +42,9 @@ const columns=[
     {
       text: "BLOCKED",
       value: "BLOCKED"
+    },{
+      text:'IN PROGRESS',
+      value:'IN PROGRESS'
     }],
     filterMultiple: true,
     onFilter: (value, record) => record.state.indexOf(value) === 0,
@@ -57,47 +60,23 @@ const columns=[
 ];
 const dataSource = [
   {
-    key:'2',
+    key:'1',
     component:'OTT-FireTV-1.1.0',
     number:'MGLN-6533',
-    state:'DEV COMPLETE',
+    state:'QA IN PROGRESS',
     title:'OV:Fire TV - Clickstream update',
-    status:'this ticket tracks that EVERY SINGLE EVENT has the correct schema. will need a full list of scenarios (which would ultimately be the regression suite for clickstream-ott'
+    status:'Will test after i close MGLN-6167'
+  },
+  {
+    key:'2',
+    component:'OTT-FireTV-1.2.0',
+    number:'MGLN-6167',
+    state:'IN PROGRESS',
+    title:'OV:Fire TV - Video Events',
+    status:'reopened - waiting for fix from max'
   },
   {
     key:'3',
-    component:'OTT-RokuTV-1.1.0',
-    number:'MGLN-6532',
-    state:'DEV COMPLETE',
-    title:'OV:Roku TV - Clickstream update',
-    status:'this ticket tracks that EVERY SINGLE EVENT has the correct schema. will need a full list of scenarios (which would ultimately be the regression suite for clickstream-ott'
-  },
-  {
-    key:'4',
-    component:'Compass: OTT Roku',
-    number:'MGLN-6156',
-    state:'QA IN PROGRESS',
-    title:'OV:Roku - Clickstream - API Error',
-    status:'Need to simulate scenario with Narendra'
-  },
-  {
-    key:'5',
-    component:'Compass: OTT Roku',
-    number:'MGLN-6159',
-    state:'READY',
-    title:'OV:Roku - Clickstream - Endpoint is not available',
-    status:'Need to simulate scenario with Narendra'
-  },
-  {
-    key:'6',
-    component:'Compass: OTT Roku',
-    number:'MGLN-6161',
-    state:'READY',
-    title:'OV:Roku - Clickstream - Video issue',
-    status:'Need to simulate scenario with Narendra'
-  },
-  {
-    key:'8',
     component:'OTT-AppleTV-1.2.0',
     number:'MGLN-6967',
     state:'QA IN PROGRESS',
@@ -105,16 +84,40 @@ const dataSource = [
     status:'sounds like i need to work directly with a dev to simulate the scenario that tests this ticket.'
   },
   {
-    key:'9',
+    key:'5',
     component:'xiOrchistrate',
-    number:'MGLN-3257',
+    number:'MGLN-7214',
     state:'QA IN PROGRESS',
-    title:"This ticket is reopened to address the Ocean View requirements for the future journey State Room Access",
-    status:'starting this tomorrow'
+    title:"Create Lookup/mapping for tagalong images",
+    status:'will look at this when im done with clickstream'
+  },
+  {
+    key:'6',
+    component:'xiOrchistrate',
+    number:'MGLN-6884',
+    state:'QA IN PROGRESS',
+    title:"Folio Call should get all guest-entity guest data in one call",
+    status:'will look at this when im done with clickstream'
+  },
+  {
+    key:'7',
+    component:'xiOrchistrate',
+    number:'MGLN-7337',
+    state:'BLOCKED',
+    title:"XAP-12-1 : XOS : Modify XOS Cabin Details returnl",
+    status:'looking at this now since im waiting on a fire build from max'
+  },
+  {
+    key:'8',
+    component:'xiOrchistrate',
+    number:'MGLN-1234',
+    state:'DEV COMPLETE',
+    title:"BLAH ",
+    status:'looking at this now since im waiting on a fire build from max'
   }
 ];
 
-let now = new Date(2018, 5, 26, 12, 34);
+let now = new Date(2018, 6, 3, 13, 51);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -132,20 +135,16 @@ class Main extends React.Component {
                 <ul>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/329351879/ClickStream+supplemental+info">Clickstream update page</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/241926493/Fire+TV+Roku+TV+Apple+TV+Stateroom+iOS+and+Android+Clickstream+Events">OTT clickstream specs</a></li>
-                    <li><h2>Currently splitting up the "clickstream supplemental info" page into smaller, more manageable tickets.</h2></li>
-                    <li>need to add comment to spec stating that we get content VIEW, not content USAGE, upon exiting episode detail</li>
-                    <li> need to add comment to spec that we wont be throwing a content view event for entering a collection (its already thrown when you land on the topnav item)</li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?jql=filter%20in%20(xt_Magellan_Open_Sprints_In_QA_QA)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="  https://carnival.atlassian.net/browse/MGLN-7213?jql=status%20not%20in%20(%22rejected%22%2C%20%22closed%22%2C%20Verified%2C%20Deferred%2C%20%22open%22%2C%20%22in%20progress%22)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
                 </ul>
                 
               </Card>
               <br/>
-              <Card title="Priorities">
+              <Card title={<div>Priorities <Icon type="profile"/></div>}>
                 <ol>
-                  <li>Xos</li>
-                  <li>Roku</li>
-                  <li>Splitting up the 'clickstream update' page</li>
+                  <li>Clickstream OTT</li>
+                  <li>XOS</li>
                 </ol>
               </Card>
             </Card>
@@ -153,7 +152,6 @@ class Main extends React.Component {
       );
     }
   }
-
  
 export {Main};
 export default Main;
