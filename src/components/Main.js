@@ -73,7 +73,7 @@ const dataSource = [
     number:'MGLN-7214',
     state:'QA IN PROGRESS',
     title:"Create Lookup/mapping for tagalong images",
-    status:'will look at this when im done with clickstream'
+    status:'testing in progress.. should finish by tomorrow'
   },
   {
     key:'4',
@@ -93,7 +93,7 @@ const dataSource = [
   }
 ];
 
-let now = new Date(2018, 6, 5, 11, 51);
+let now = new Date(2018, 6, 5, 15, 6);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
