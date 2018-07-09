@@ -61,11 +61,11 @@ const columns=[
 const dataSource = [
   {
     key:'1',
-    component:'OTT-AppleTV-1.2.0',
-    number:'MGLN-6967',
-    state:'BLOCKED',
-    title:"OV:Apple TV - Migrate user's favorite and recent",
-    status:'blocked against DM-8381. See Notes section.'
+    component:'xiOrchistrate',
+    number:'MGLN-7396',
+    state:'READY',
+    title:'Verify that Ocean.com is using the proper backend services for a given environment (QA and QX)',
+    status: 'I have verified ocean.com in devint and qa. qx currently down..'
   },
   {
     key:'2',
@@ -76,24 +76,16 @@ const dataSource = [
     status:'testing in progress.. should finish by tomorrow'
   },
   {
-    key:'4',
+    key:'3',
     component:'xiOrchistrate',
-    number:'MGLN-7337',
-    state:'BLOCKED',
-    title:"XAP-12-1 : XOS : Modify XOS Cabin Details return",
-    status:'blocked against DM-8379. See Notes section.'
-  },
-  {
-    key:'5',
-    component:'OTT-FireTV-1.2.0',
-    number:'MGLN-6627',
+    number:'MGLN-7107',
     state:'QA IN PROGRESS',
-    title:"OV:Fire TV - Migrate user's favorite and recent",
-    status: 'need to work directly with Max..'
+    title: 'XOS support for retrieval and creation of tagalongs for Ocean View',
+    status: 'beginning investigation'
   }
 ];
 
-let now = new Date(2018, 6, 5, 15, 6);
+let now = new Date(2018, 6, 9, 13, 44);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
@@ -109,8 +101,6 @@ class Main extends React.Component {
             <Card title={<div>Notes <Icon type="edit"/></div>}>
               <Card>
                 <ul>
-                    <li>MGLN-6967 is currently blocked by <a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/DM-8381">DM-8381</a></li>
-                    <li>MGLN-7337 is currently blocked by <a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/DM-8379">DM-8379</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="  https://carnival.atlassian.net/browse/MGLN-7213?jql=status%20not%20in%20(%22rejected%22%2C%20%22closed%22%2C%20Verified%2C%20Deferred%2C%20%22open%22%2C%20%22in%20progress%22)%20and%20assignee%3Dabullock">Open Issues Assigned To Me</a></li>
                 </ul>
