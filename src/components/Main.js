@@ -66,22 +66,6 @@ const dataSource = [
     state:'QA IN PROGRESS',
     title:"Medallion Accessories Need to return the retail items for Adam Coulton",
     status:'beginning now'
-  },
-  {
-    key:'2',
-    component:'xiOrchistrate',
-    number:'MGLN-7245',
-    state:'QA IN PROGRESS',
-    title:'XOS Clickstream API should not validate source fields for the incident events',
-    status:'beginning today'
-  },
-  {
-    key:'3',
-    component:'xiOrchistrate',
-    number:'MGLN-7371',
-    state:'QA IN PROGRESS',
-    title:'[XOS] Upgrade XOS Kafka Clients',
-    status:'Pedro will add a comment and either he or I will close.'
   }
 ];
 
