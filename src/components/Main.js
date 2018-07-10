@@ -62,30 +62,30 @@ const dataSource = [
   {
     key:'1',
     component:'xiOrchistrate',
-    number:'MGLN-7396',
-    state:'READY',
-    title:'Verify that Ocean.com is using the proper backend services for a given environment (QA and QX)',
-    status: 'I have verified ocean.com in devint and qa. qx currently down..'
+    number:'MGLN-7268',
+    state:'QA IN PROGRESS',
+    title:"Medallion Accessories Need to return the retail items for Adam Coulton",
+    status:'beginning now'
   },
   {
     key:'2',
     component:'xiOrchistrate',
-    number:'MGLN-7214',
+    number:'MGLN-7245',
     state:'QA IN PROGRESS',
-    title:"Create Lookup/mapping for tagalong images",
-    status:'testing in progress.. should finish by tomorrow'
+    title:'XOS Clickstream API should not validate source fields for the incident events',
+    status:'beginning today'
   },
   {
     key:'3',
     component:'xiOrchistrate',
-    number:'MGLN-7107',
+    number:'MGLN-7371',
     state:'QA IN PROGRESS',
-    title: 'XOS support for retrieval and creation of tagalongs for Ocean View',
-    status: 'beginning investigation'
+    title:'[XOS] Upgrade XOS Kafka Clients',
+    status:'Pedro will add a comment and either he or I will close.'
   }
 ];
 
-let now = new Date(2018, 6, 9, 13, 44);
+let now = new Date(2018, 6, 10, 14, 9);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
