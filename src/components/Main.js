@@ -65,11 +65,60 @@ const dataSource = [
     number:'MGLN-7268',
     state:'QA IN PROGRESS',
     title:"Medallion Accessories Need to return the retail items for Adam Coulton",
-    status:'beginning now'
-  }
+    status:'QA Blocked against DM-8503.'
+  },
+  {
+    key:'2',
+    component:'Door Panel UI',
+    number:'MGLN-7400',
+    state:'QA IN PROGRESS',
+    title:'XAP-13-3 xiAccess UI - Apply design refinements to the Smart Access Screen',
+    status:''
+  },
+  {
+    key:'3',
+    component:'Door Panel UI',
+    number:'MGLN-7399',
+    state:'QA IN PROGRESS',
+    title:'XAP-13-5 xiAccess UI - Adjust colors of the Captain Circle icons',
+    status:''
+  },
+  {
+    key:'4',
+    component:'Door Panel UI',
+    number:'MGLN-7398',
+    state:'QA IN PROGRESS',
+    title:'XAP-13-4 xiAccess UI - Apply designs to the Door Unlock Screen',
+    status:''
+  },
+  {
+    key:'5',
+    component:'Door Panel UI',
+    number:'MGLN-7397',
+    state:'QA IN PROGRESS',
+    title:'XAP-13-2 xiAccess UI - Apply designs refinements to the Medallion Detection Screen',
+    status:''
+  },
+  {
+    key:'6',
+    component:'Door Panel UI',
+    number:'MGLN-7343',
+    state:'QA IN PROGRESS',
+    title:'XAP-13-1 xiAccess UI - Apply designs refinements for the Panel Static Screen',
+    status:''
+  },
+  {
+    key:'7',
+    component:'Door Panel UI',
+    number:'MGLN-7342',
+    state:'QA IN PROGRESS',
+    title:'XAP-13-6 xiAccess UI Remove no-Loyalty graphic',
+    status:''
+  },
+
 ];
 
-let now = new Date(2018, 6, 10, 14, 9);
+let now = new Date(2018, 6, 11, 13, 50);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
