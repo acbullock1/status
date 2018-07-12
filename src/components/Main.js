@@ -63,15 +63,15 @@ const dataSource = [
     key:'1',
     component:'xiOrchistrate',
     number:'MGLN-7268',
-    state:'QA IN PROGRESS',
+    state:'VERIFIED',
     title:"Medallion Accessories Need to return the retail items for Adam Coulton",
-    status:'QA Blocked against DM-8503.'
+    status:'Related bug: MGLN-7416'
   },
   {
     key:'2',
     component:'Door Panel UI',
     number:'MGLN-7400',
-    state:'QA IN PROGRESS',
+    state:'VERIFIED',
     title:'XAP-13-3 xiAccess UI - Apply design refinements to the Smart Access Screen',
     status:''
   },
@@ -81,7 +81,7 @@ const dataSource = [
     number:'MGLN-7399',
     state:'QA IN PROGRESS',
     title:'XAP-13-5 xiAccess UI - Adjust colors of the Captain Circle icons',
-    status:''
+    status:'need loyalty members in cabin'
   },
   {
     key:'4',
@@ -95,7 +95,7 @@ const dataSource = [
     key:'5',
     component:'Door Panel UI',
     number:'MGLN-7397',
-    state:'QA IN PROGRESS',
+    state:'VERIFIED',
     title:'XAP-13-2 xiAccess UI - Apply designs refinements to the Medallion Detection Screen',
     status:''
   },
@@ -103,22 +103,22 @@ const dataSource = [
     key:'6',
     component:'Door Panel UI',
     number:'MGLN-7343',
-    state:'QA IN PROGRESS',
+    state:'BLOCKED',
     title:'XAP-13-1 xiAccess UI - Apply designs refinements for the Panel Static Screen',
-    status:''
+    status:'BLOCKED against MGLN-7408'
   },
   {
     key:'7',
     component:'Door Panel UI',
     number:'MGLN-7342',
-    state:'QA IN PROGRESS',
+    state:'VERIFIED',
     title:'XAP-13-6 xiAccess UI Remove no-Loyalty graphic',
     status:''
   },
 
 ];
 
-let now = new Date(2018, 6, 11, 13, 50);
+let now = new Date(2018, 6, 12, 14, 53);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
     render() {
