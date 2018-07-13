@@ -79,15 +79,15 @@ const dataSource = [
     key:'3',
     component:'Door Panel UI',
     number:'MGLN-7399',
-    state:'QA IN PROGRESS',
+    state:'VERIFIED',
     title:'XAP-13-5 xiAccess UI - Adjust colors of the Captain Circle icons',
-    status:'need loyalty members in cabin'
+    status:''
   },
   {
     key:'4',
     component:'Door Panel UI',
     number:'MGLN-7398',
-    state:'QA IN PROGRESS',
+    state:'VERIFIED',
     title:'XAP-13-4 xiAccess UI - Apply designs to the Door Unlock Screen',
     status:''
   },
@@ -103,9 +103,9 @@ const dataSource = [
     key:'6',
     component:'Door Panel UI',
     number:'MGLN-7343',
-    state:'BLOCKED',
+    state:'VERIFIED',
     title:'XAP-13-1 xiAccess UI - Apply designs refinements for the Panel Static Screen',
-    status:'BLOCKED against MGLN-7408'
+    status:''
   },
   {
     key:'7',
