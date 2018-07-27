@@ -132,7 +132,7 @@ const dataSource = [
     title:'Ocean Nav / GuestView - Update Loyalty Status mapping to xos/folio',
     status:'same as mgln-7272'
 
-  },{}
+  }
 
 ];
 
