@@ -70,30 +70,22 @@ const dataSource = [
   },
   {
     key:'2',
-    component:' xiOrchistrate',
-    number:'MGLN-7417',
-    state:'QA IN PROGRESS',
-    title:"XOS endpoint for xi-access-panel's startup",
-    status:""
-  },
-  {
-    key:'4',
     component:'OceanView: Android, OceanView: iOS',
     number:'MGLN-7215',
     state:'QA IN PROGRESS',
     title:'OceanView Mobile - Environment Scan on OceanView Mobile',
-    status:''
+    status:"Need Jay's assistance. No idea how I can black-box test this."
   },
   {
-    key:'5',
+    key:'3',
     component:'OceanView: Android, OceanView: iOS',
     number:'MGLN-7184',
     state:'QA IN PROGRESS',
     title:'OceanView Mobile - Chromecast - Enable the Ability for the Guest to Cast a Content through Chromecast',
-    status:''
+    status:'have a few questions for Jay..'
   },
   {
-    key:'6',
+    key:'4',
     component:'OceanView: Android, OceanView: iOS',
     number:'MGLN-7181',
     state:'BLOCKED',
@@ -101,25 +93,50 @@ const dataSource = [
     status:'Waiting for 2.60.1 to be in devint'
   },
   {
-    key:'7',
+    key:'5',
     component:' OceanView: Android, OceanView: iOS ',
     number:'MGLN-7327',
     state:'QA IN PROGRESS',
     title:'OceanView Mobile - Chromecast - Detail Expanded',
-    status:''
+    status:'Questions for Jay..'
   },
   {
-    key:'8',
+    key:'6',
     component:'xiOrchistrate',
     number:'MGLN-7349',
     state:'QA IN PROGRESS',
     title:'Address: DM-8236 TV Episode Publish Event Not Showing up',
-    status:''
-  }
+    status:"Need Pedro's help"
+  },
+  {
+    key:'7',
+    component:'Door Panel UI',
+    number:'MGLN-7338',
+    state:'QA IN PROGRESS',
+    title:'XAP-12-2 : xiAccess UI : Present Guest On-Screen data based upon in-room status',
+    status:'unable to test with real data.. validated with mock data.. waiting on C.Congdons feedback b4 closing..'
+  },
+  {
+    key:'8',
+    component:'Door Panel UI, xiOrchistrate',
+    number:'MGLN-7321',
+    state:'BLOCKED',
+    title:'Abandoned Medallion',
+    status:'Blocked against MGLN-7464'
+  },
+  {
+    key:'9',
+    component:'Guestview / Navigator',
+    number:'AAD-7417',
+    state: 'BLOCKED',
+    title:'Ocean Nav / GuestView - Update Loyalty Status mapping to xos/folio',
+    status:'same as mgln-7272'
+
+  },{}
 
 ];
 
-let now = new Date(2018, 6, 25, 14, 36);
+let now = new Date(2018, 6, 27, 16, 24);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
   // componentDidMount(){
