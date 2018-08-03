@@ -94,14 +94,6 @@ const dataSource = [
   },
   {
     key:'5',
-    component:' OceanView: Android, OceanView: iOS ',
-    number:'MGLN-7327',
-    state:'BLOCKED',
-    title:'OceanView Mobile - Chromecast - Detail Expanded',
-    status:'Awaiting new build per Jay insruction'
-  },
-  {
-    key:'6',
     component:'Door Panel UI, xiOrchistrate',
     number:'MGLN-7321',
     state:'BLOCKED',
@@ -109,18 +101,56 @@ const dataSource = [
     status:'Blocked against MGLN-7464'
   },
   {
+    key:'6',
+    component:'OceanView: Android, OceanView: iOS',
+    number:'MGLN-7462',
+    state:'QA IN PROGRESS',
+    title:'Chromecast scrubber duration issue',
+    status:'waiting for testflight access to test the ios side..'
+  },
+  {
     key:'7',
-    component:'Guestview / Navigator',
-    number:'AAD-7417',
-    state: 'BLOCKED',
-    title:'Ocean Nav / GuestView - Update Loyalty Status mapping to xos/folio',
-    status:'same as mgln-7272'
-
+    component:'OceanView: Android, OceanView: iOS',
+    number:'MGLN-7402',
+    state:'QA IN PROGRESS',
+    title:'OceanView Mobile not rendering "Run Time" field from xiCMS',
+    status:'waiting for testflight access to test the ios side..'
+  },
+  {
+    key:'8',
+    component:'OceanView: iOS',
+    number:'MGLN-7305',
+    state:'QA IN PROGRESS',
+    title:'OceanView iOS - The audio is muted during Video playback when iPhone hardware switch is set to silent',
+    status:'waiting for testflight access to test the ios side..'
+  },
+  {
+    key:'9',
+    component:'OceanView: Android, OceanView: iOS',
+    number:'MGLN-7185',
+    state:'QA IN PROGRESS',
+    title:'OceanView Mobile - Chromecast - Detail Collapsed ',
+    status:'waiting for testflight access to test the ios side..'
+  },
+  {
+    key:'10',
+    component:'Ocean.com',
+    number:'MGLN-7177',
+    state:'BLOCKED',
+    title:'OceanProfile - Payment Method - Deleting a Payment Method',
+    status:'DM-9039'
+  },
+  {
+    key:'11',
+    component:'Ocean.com',
+    number:'MGLN-7176',
+    state:'BLOCKED',
+    title:'OceanProfile - Payment Method - Adding a Payment Method',
+    status:'DM-9039'
   }
-
 ];
 
-let now = new Date(2018, 6, 30, 16, 6);
+let now = new Date(2018, 7, 3, 14, 51);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
   // componentDidMount(){
@@ -145,7 +175,7 @@ class Main extends React.Component {
               <Card>
                 <ul>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
-                    <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/browse/MGLN-7417?filter=40237">Open issues assigned To Me</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?filter=40237">Open issues assigned To Me</a></li>
                 </ul>
                 
               </Card>
