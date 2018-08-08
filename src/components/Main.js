@@ -77,14 +77,6 @@ const dataSource = [
     status:"Assigned this to jay---a  dev needs to close this. Too pervasive to test."
   },
   {
-    key:'3',
-    component:'OceanView: Android, OceanView: iOS',
-    number:'MGLN-7184',
-    state:'BLOCKED',
-    title:'OceanView Mobile - Chromecast - Enable the Ability for the Guest to Cast a Content through Chromecast',
-    status:'have a few questions for Jay..'
-  },
-  {
     key:'4',
     component:'OceanView: Android, OceanView: iOS',
     number:'MGLN-7181',
@@ -98,39 +90,7 @@ const dataSource = [
     number:'MGLN-7321',
     state:'BLOCKED',
     title:'Abandoned Medallion',
-    status:'Blocked against MGLN-7464'
-  },
-  {
-    key:'6',
-    component:'OceanView: Android, OceanView: iOS',
-    number:'MGLN-7462',
-    state:'QA IN PROGRESS',
-    title:'Chromecast scrubber duration issue',
-    status:'waiting for testflight access to test the ios side..'
-  },
-  {
-    key:'7',
-    component:'OceanView: Android, OceanView: iOS',
-    number:'MGLN-7402',
-    state:'QA IN PROGRESS',
-    title:'OceanView Mobile not rendering "Run Time" field from xiCMS',
-    status:'waiting for testflight access to test the ios side..'
-  },
-  {
-    key:'8',
-    component:'OceanView: iOS',
-    number:'MGLN-7305',
-    state:'QA IN PROGRESS',
-    title:'OceanView iOS - The audio is muted during Video playback when iPhone hardware switch is set to silent',
-    status:'waiting for testflight access to test the ios side..'
-  },
-  {
-    key:'9',
-    component:'OceanView: Android, OceanView: iOS',
-    number:'MGLN-7185',
-    state:'QA IN PROGRESS',
-    title:'OceanView Mobile - Chromecast - Detail Collapsed ',
-    status:'waiting for testflight access to test the ios side..'
+    status:'KAFKA issues in xis blocking this.'
   },
   {
     key:'10',
@@ -150,7 +110,7 @@ const dataSource = [
   }
 ];
 
-let now = new Date(2018, 7, 3, 14, 51);
+let now = new Date(2018, 7, 8, 14, 51);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
   // componentDidMount(){
@@ -182,7 +142,7 @@ class Main extends React.Component {
               <br/>
               <Card title={<div>Priorities <Icon type="profile"/></div>}>
                 <ol>
-                  <li>Closing tickets</li>
+                  <li>All tickets are closed/blocked. Working on TR/mocha integration</li>
                 </ol>
               </Card>
             </Card>
