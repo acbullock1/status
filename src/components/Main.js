@@ -92,19 +92,11 @@ const dataSource = [
     state: 'BLOCKED',
     title: 'Ocean.com - Journey - Travel Companions Landing Page',
     status:'DM-9210'
-  },
-  {
-    key: '5',
-    component: 'Ocean.com',
-    number: 'MGLN-7545',
-    state: 'QA IN PROGRESS',
-    title:'Ocean.com Ocean ready status on landing page based on Ocean Ready flags and configuration',
-    status:'beginning my testing now'
   }
 
 ];
 
-let now = new Date(2018, 7, 16, 13, 46);
+let now = new Date(2018, 7, 16, 14, 6);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
   // componentDidMount(){
@@ -138,7 +130,8 @@ class Main extends React.Component {
               <br/>
               <Card title={<div>Priorities <Icon type="profile"/></div>}>
                 <ol>
-                  <li>All tickets are closed/blocked. Working on TR/mocha integration</li>
+                  <li>Tickets</li>
+                  <li>Optimizing mocha/TR script</li>
                 </ol>
               </Card>
             </Card>
