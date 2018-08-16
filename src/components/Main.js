@@ -2,6 +2,7 @@
 import React from 'react';
 import {Table,Icon, Card} from 'antd';
 import API from '../utils/API';
+import Menu from '../menu.pdf'
 const columns=[
   {
     width:150,
@@ -70,14 +71,6 @@ const dataSource = [
   },
   {
     key:'2',
-    component:'OceanView: Android, OceanView: iOS',
-    number:'MGLN-7215',
-    state:'QA IN PROGRESS',
-    title:'OceanView Mobile - Environment Scan on OceanView Mobile',
-    status:"Assigned this to jay---a  dev needs to close this. Too pervasive to test."
-  },
-  {
-    key:'3',
     component:'Ocean.com',
     number: 'MGLN-7288',
     state: 'BLOCKED',
@@ -85,7 +78,7 @@ const dataSource = [
     status:'DM-9210'
   },
   {
-    key:'4',
+    key:'3',
     component:'OceanView: Android, OceanView: iOS',
     number:'MGLN-7181',
     state:'BLOCKED',
@@ -93,7 +86,7 @@ const dataSource = [
     status:'Waiting for 2.60.1 to be in devint'
   },
   {
-    key:'5',
+    key:'4',
     component:'Ocean.com',
     number: 'MGLN-7286',
     state: 'BLOCKED',
@@ -101,40 +94,17 @@ const dataSource = [
     status:'DM-9210'
   },
   {
-    key:'6',
-    component:'OceanView: Android',
-    number:'MGLN-7089',
-    state:'QA IN PROGRESS',
-    title:'OceanView Android - Momentarily next Episode screen is displayed before user is navigated to HomeScreen',
-    status: 'closing this today'
-  },
-  {
-    key:'7',
-    component:'Ocean.com',
-    number:'MGLN-7057',
-    state:'QA IN PROGRESS',
-    title:'Ocean: Microsoft Edge – Blue horizontal line is displayed underneath Top Nav on ocean.com landing page',
-    status: 'need a Windows machine to test..'
-  },
-  {
-    key:'10',
-    component:'Ocean.com',
-    number:'MGLN-7177',
-    state:'BLOCKED',
-    title:'OceanProfile - Payment Method - Deleting a Payment Method',
-    status:'DM-9039'
-  },
-  {
-    key:'11',
-    component:'Ocean.com',
-    number:'MGLN-7176',
-    state:'BLOCKED',
-    title:'OceanProfile - Payment Method - Adding a Payment Method',
-    status:'DM-9039'
+    key: '5',
+    component: 'Ocean.com',
+    number: 'MGLN-7545',
+    state: 'QA IN PROGRESS',
+    title:'Ocean.com Ocean ready status on landing page based on Ocean Ready flags and configuration',
+    status:'beginning my testing now'
   }
+
 ];
 
-let now = new Date(2018, 7, 13, 10, 57);
+let now = new Date(2018, 7, 16, 13, 46);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
   // componentDidMount(){
@@ -160,6 +130,8 @@ class Main extends React.Component {
                 <ul>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/wiki/spaces/MGLN/pages/157278542/QA+ticket+validation+tracking">QA Ticket Validation Tracking</a></li>
                     <li><a target="_blank" rel="noopener noreferrer" href="https://carnival.atlassian.net/issues/?filter=40237">Open issues assigned To Me</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="http://10.127.193.99/xiaccess/inventory">Door Panel Inventory (be on DPA wifi)</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href={Menu}>Lunch</a></li>
                 </ul>
                 
               </Card>
