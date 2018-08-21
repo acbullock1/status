@@ -73,9 +73,9 @@ const dataSource = [
     key:'2',
     component:'Ocean.com',
     number: 'MGLN-7288',
-    state: 'BLOCKED',
+    state: 'QA IN PROGRESS',
     title: 'Ocean.com - Journey - Add Companions to a Journey',
-    status:'DM-9210'
+    status:'Looking at this today'
   },
   {
     key:'3',
@@ -89,14 +89,70 @@ const dataSource = [
     key:'4',
     component:'Ocean.com',
     number: 'MGLN-7286',
-    state: 'BLOCKED',
+    state: 'QA IN PROGRESS',
     title: 'Ocean.com - Journey - Travel Companions Landing Page',
-    status:'DM-9210'
+    status:'Looking at this today'
+  },
+  {
+    key:'5',
+    component: 'xiOrchistrate',
+    number:'MGLN-7606',
+    state: 'QA IN PROGRESS',
+    title: 'Payload modification request on xos/companions/extende',
+    status: 'Looking at this today'
+  },
+  {
+    key:'6',
+    component: 'xiImmigration',
+    number: 'MGLN-7597',
+    state: 'QA IN PROGRESS',
+    title: '[Dive-Traveldoc-Recommendation] New destination codes added on journey details of code "HTL", breaking TDRS because not a valid port code.',
+    status: 'Looking at this today..'
+  },
+  {
+    key:'7',
+    component: 'xiImmigration',
+    number: 'MGLN-7572',
+    state: 'QA IN PROGRESS',
+    title: '(DM-8723) Personal Details "birth-country-code" not being saved',
+    status: 'Looking at this today..'
+  },
+  {
+    key:'8',
+    component:'Ocean.com',
+    number: 'MGLN-7556',
+    state: 'QA IN PROGRESS',
+    title: 'Ocean.com Add API integration for Companions to companion selector',
+    status: 'Looking at this today..'
+  },
+  {
+    key:'9',
+    component:'Ocean.com',
+    number: 'MGLN-7312',
+    state: 'QA IN PROGRESS',
+    title: 'OceanReady - OceanReady Checklist - Companion Checklist',
+    status: 'Looking at this today..'
+  },
+  {
+    key:'10',
+    component: 'Ocean.com',
+    state: 'QA IN PROGRESS',
+    number:'MGLN-7282',
+    title: 'Ocean.com - Journey - Travel Pass (QR Code) Print and Email',
+    status: 'Looking at this today'
+  },
+  {
+    key:'11',
+    component: 'Ocean.com',
+    number:'MGLN-7274',
+    state: 'QA IN PROGRESS',
+    title: 'Ocean.com - Journey - Finding an Exisiting Journey',
+    status: 'Looking at this today'
   }
 
 ];
 
-let now = new Date(2018, 7, 16, 14, 6);
+let now = new Date(2018, 7, 21, 12, 0);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
   // componentDidMount(){
