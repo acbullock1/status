@@ -86,16 +86,72 @@ const dataSource = [
     status:'Waiting for 2.60.1 to be in devint'
   },
   {
-    key:'6',
+    key:'4',
     component:'Ocean.com',
     number: 'MGLN-7312',
     state: 'QA IN PROGRESS',
     title: 'OceanReady - OceanReady Checklist - Companion Checklist',
     status: 'Looking at this today..'
+  },
+  {
+    key:'5',
+    component:'xiOrchistrate',
+    number: 'MGLN-7609',
+    state: 'QA IN PROGRESS',
+    title: 'New /journeys/:id/immigrationdocuments endpoint',
+    status: 'Looking at this today..'
+  },
+  {
+    key:'6',
+    component:'OceanView: Web',
+    number: 'MGLN-6897',
+    state: 'QA IN PROGRESS',
+    title: 'OceanView Web - ClickStream event for entering collection/episode detail page',
+    status: 'Looking at this today..'
+  },
+  {
+    key:'7',
+    component:'OceanView: Web',
+    number: 'MGLN-6896',
+    state: 'QA IN PROGRESS',
+    title: 'OceanView Web - Clickstream event - exiting collection/ detail page',
+    status: 'Looking at this today..'
+  },
+  {
+    key:'8',
+    component:'OceanView: Web',
+    number: 'MGLN-6896',
+    state: 'QA IN PROGRESS',
+    title: 'OceanView Web - Clickstream event - exiting collection/ detail page',
+    status: 'Looking at this today..'
+  },
+  {
+    key:'9',
+    component:'OceanView: Web',
+    number: 'MGLN-6893',
+    state: 'QA IN PROGRESS',
+    title: 'OceanView Web - ClickStream - Incident Types - Endpoint',
+    status: 'Looking at this today..'
+  },
+  {
+    key:'10',
+    component:'OceanView: Web',
+    number: 'MGLN-6649',
+    state: 'QA IN PROGRESS',
+    title: 'OceanView Mobile - ClickStream - Incident - Network Issues',
+    status: 'Looking at this today..'
+  },
+  {
+    key:'11',
+    component:'OceanView: Android, OceanView: iOS',
+    number: 'MGLN-6648',
+    state: 'QA IN PROGRESS',
+    title: 'OceanView Mobile - ClickStream - Incident Types - Endpoint',
+    status: 'Looking at this today..'
   }
 ];
 
-let now = new Date(2018, 7, 21, 12, 0);
+let now = new Date(2018, 7, 27, 13, 30);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
   // componentDidMount(){
