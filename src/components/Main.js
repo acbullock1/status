@@ -73,68 +73,12 @@ const dataSource = [
     key:'2',
     component:'Ocean.com',
     number: 'MGLN-7288',
-    state: 'BLOCKED',
+    state: 'IN PROGRESS',
     title: 'Ocean.com - Journey - Add Companions to a Journey',
-    status:'MGLN-7608'
+    status:''
   },
   {
     key:'3',
-    component:'OceanView: Android, OceanView: iOS',
-    number:'MGLN-7181',
-    state:'BLOCKED',
-    title:'OceanView Mobile - Closed Captions - Subtitles',
-    status:'Waiting for 2.60.1 to be in devint'
-  },
-  {
-    key:'4',
-    component:'Ocean.com',
-    number: 'MGLN-7312',
-    state: 'QA IN PROGRESS',
-    title: 'OceanReady - OceanReady Checklist - Companion Checklist',
-    status: 'Looking at this today..'
-  },
-  {
-    key:'5',
-    component:'xiOrchistrate',
-    number: 'MGLN-7609',
-    state: 'QA IN PROGRESS',
-    title: 'New /journeys/:id/immigrationdocuments endpoint',
-    status: 'Looking at this today..'
-  },
-  {
-    key:'6',
-    component:'OceanView: Web',
-    number: 'MGLN-6897',
-    state: 'QA IN PROGRESS',
-    title: 'OceanView Web - ClickStream event for entering collection/episode detail page',
-    status: 'Looking at this today..'
-  },
-  {
-    key:'7',
-    component:'OceanView: Web',
-    number: 'MGLN-6896',
-    state: 'QA IN PROGRESS',
-    title: 'OceanView Web - Clickstream event - exiting collection/ detail page',
-    status: 'Looking at this today..'
-  },
-  {
-    key:'8',
-    component:'OceanView: Web',
-    number: 'MGLN-6896',
-    state: 'QA IN PROGRESS',
-    title: 'OceanView Web - Clickstream event - exiting collection/ detail page',
-    status: 'Looking at this today..'
-  },
-  {
-    key:'9',
-    component:'OceanView: Web',
-    number: 'MGLN-6893',
-    state: 'QA IN PROGRESS',
-    title: 'OceanView Web - ClickStream - Incident Types - Endpoint',
-    status: 'Looking at this today..'
-  },
-  {
-    key:'10',
     component:'OceanView: Web',
     number: 'MGLN-6649',
     state: 'QA IN PROGRESS',
@@ -142,7 +86,7 @@ const dataSource = [
     status: 'Looking at this today..'
   },
   {
-    key:'11',
+    key:'4',
     component:'OceanView: Android, OceanView: iOS',
     number: 'MGLN-6648',
     state: 'QA IN PROGRESS',
