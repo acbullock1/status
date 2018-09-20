@@ -62,7 +62,7 @@ const columns=[
 const dataSource = [
 ];
 
-let now = new Date(2018, 8, 14, 9, 30);
+let now = new Date(2018, 8, 20, 11, 30);
 let lastupdated = now.toDateString() + " - " + now.toLocaleTimeString();
 class Main extends React.Component {
   // componentDidMount(){
